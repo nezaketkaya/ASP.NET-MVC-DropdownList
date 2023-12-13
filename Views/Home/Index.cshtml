@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model AspNetDropdownList.Models.ViewModels.HomeViewModel
+
+
+<form asp-controller="Home" asp-action="Index" method="post">
+
+<div class="mb-3">
+   <label class="form-label">Select Country</label>
+   <select class="form-select" asp-items= "Model.CountriesSelectist" asp-for="SelectedCountry">
+     <option value="NOSELECTEDVALUE" >-- Please select a country --</option>
+   
+   </select>
+</div>
+
+<div class="mb-3">
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+</form>

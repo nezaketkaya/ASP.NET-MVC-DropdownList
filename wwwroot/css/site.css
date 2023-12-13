@@ -1,0 +1,44 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: olive;
+  margin-bottom: 60px;
+}
+
+
+form {
+    border-radius: 10px;
+    background-color: floralwhite; 
+    color: red; 
+    padding: 20px;
+}
+
+
+.form-label {
+    color: darkred; 
+}
+
+
+.form-select {
+    background-color: bisque;
+    color: darkred;
+}
+
+.btn-primary {
+    background-color: limegreen; 
+    color: floralwhite; 
+    border-color: green;
+}
